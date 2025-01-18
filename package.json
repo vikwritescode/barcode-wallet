@@ -1,7 +1,7 @@
 {
   "name": "barcode-wallet",
   "homepage": "https://vikwritescode.github.io/barcode-wallet/",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
