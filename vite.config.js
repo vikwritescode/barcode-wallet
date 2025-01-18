@@ -8,7 +8,7 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [tailwindcss()],
-      base: "/barcode-wallet"
+      base: "/barcode-wallet/"
     }
   }
 })
