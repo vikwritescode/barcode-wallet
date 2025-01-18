@@ -1,5 +1,5 @@
 # Barcode Wallet
-This is a barcode wallet application I'm writing on my own. It's for storing barcodes that I come across in my day to day life which I may need.
+This is a barcode wallet application I'm writing on my own. It's for storing barcodes that I come across in my day to day life which I may need. Currently live at https://vikwritescode.github.io/barcode-wallet. 
 
 ## Why would you need to store barcodes?
 As it turns out, companies love writing useless code. From airlines to a certain large supermarket chain, all of these companies expect you to download their poorly written apps just to display barcodes for scanning. This is quite inefficient and wastes space and battery life. **Not everything needs to be an app**.
