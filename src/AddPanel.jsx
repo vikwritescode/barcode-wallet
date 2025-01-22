@@ -13,8 +13,6 @@ const AddPanel = (props) => {
         }
       }
     
-
-
     return (
         <div className="grid p-5 gap-4 md:justify-around">
         <div className = "text-left">
