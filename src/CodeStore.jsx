@@ -7,8 +7,6 @@ import CardList from './CardList';
 function CodeStore() {
   const [count, setCount] = useState(0)
   const [savedCards, setSavedCards] = useState([]);
-  const [inputNick, setInputNick] = useState("")
-  const [inputCode, setInputCode] = useState("")
 
   useEffect(
     () => {
@@ -26,10 +24,6 @@ function CodeStore() {
       <div>
         <AddPanel 
             savedCards = {savedCards}
-            inputNick = {inputNick}
-            inputCode = {inputCode}
-            onNickChange = {setInputNick}
-            onCodeChange = {setInputCode}
             onCardSave = {setSavedCards}
         />
 
