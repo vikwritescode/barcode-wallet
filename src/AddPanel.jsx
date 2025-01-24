@@ -20,6 +20,24 @@ const AddPanel = (props) => {
       setInputType(e.target.value)
     }
   
+    const codeOptions = [
+      {
+        value: "CODE128",
+        display: "Code 128"
+      },
+      {
+        value: "CODE39",
+        display: "Code 39"
+      },
+      {
+        value: "EAN13",
+        display: "EAN13"
+      },
+      {
+        value: "QR",
+        display: "QR"
+      }
+    ]
 
     return (
       <div className="grid p-5 gap-4 md:justify-around">
@@ -35,9 +53,7 @@ const AddPanel = (props) => {
         </div>
         <label className="font-bold">Barcode Type</label>
         <select onChange={handleDropdownChange} className="w-full h-8 rounded border border-gray-400 dark:border-0 dark:bg-gray-800">
-          <option value="CODE128">Code 128</option>
-          <option value="CODE39">Code 39</option>
-          <option value="EAN13">EAN 13</option>
+          {codeOptions.map(x => (<option value={x.value}>{x.display}</option>))}
         </select>
         <button className="bg-green-400 hover:bg-green-500 dark:bg-green-200 dark:hover:bg-green-300 rounded py-3 px-3 text-gray-800 text-center font-semibold"onClick={handleAddButton}>ADD</button>
       </div>

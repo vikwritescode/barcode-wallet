@@ -1,4 +1,5 @@
 import Barcode from "react-barcode"
+import QRCode from "react-qr-code"
 const Card = (props) => {
 
     return (
@@ -8,11 +9,16 @@ const Card = (props) => {
         <br />
         {(props.card.expanded) ? (
           <div>
-            <Barcode
-             value={props.card.code}
-             format={props.card.type}
-             MOD43={true}
-            />
+            {(props.card.type != "QR") ? (
+                          <Barcode
+                          value={props.card.code}
+                          format={props.card.type}
+                         />
+            ) : (
+              <QRCode value={props.card.code} />
+            )
+             }
+
             <br />
             <button className = "bg-red-300 hover:bg-red-400 dark:bg-red-200 dark:hover:bg-red-300 rounded py-3 px-3 text-gray-800 text-center font-semibold" onClick={ () => props.onDelete()}>DELETE 🔥</button>
           </div>
