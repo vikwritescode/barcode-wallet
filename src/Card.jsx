@@ -3,7 +3,7 @@ import QRCode from "react-qr-code"
 const Card = (props) => {
 
     return (
-        <center className={(props.card.expanded) ? "rounded-xl bg-zinc-200 dark:bg-slate-800 grid gap-5 justify-items-center" : "grid gap-5 justify-items-center"}>
+        <center className={(props.card.expanded) ? "rounded-xl bg-zinc-200 dark:bg-slate-800 grid justify-items-center" : "grid justify-items-center"}>
         <h3 className="text-3xl">{props.card.nick}</h3>
         <button className="w-24 bg-green-400 hover:bg-green-500 dark:bg-green-200 dark:hover:bg-green-300 rounded py-3 px-3 text-gray-800 text-center font-semibold" onClick={ () => props.onShow()}>{(props.card.expanded) ? "HIDE" : "SHOW"}</button>
         <br />
